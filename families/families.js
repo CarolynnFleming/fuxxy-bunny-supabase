@@ -21,6 +21,7 @@ async function displayFamilies() {
     familiesEl.textContent = '';
 
     for (let family of families) {
+        console.log(family)
         // create three elements for each family, one for the whole family, one to hold the name, and one to hold the bunnies
         const famBamEl = document.createElement('div');
         const famNamEl = document.createElement('h3');
