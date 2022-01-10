@@ -11,7 +11,7 @@ export async function getFamilies() {
     // fetch all families and their bunnies
     const response = await client
         .from('loving_families')
-        .select(`*, fuzzy_bunnies (*)`);
+        .select('*, fuzzy_bunnies (*)');
 
     return checkError(response);    
 }
